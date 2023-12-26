@@ -29,4 +29,17 @@ npm run install
 ```
 npm run dev
 ```
-4. silahkan coba register dan login di pojok kanan atas http://127.0.0.1:8000/
+4. silahkan coba register dan login di pojok kanan atas http://127.0.0.1:8000/  
+
+### Menambah Template Admin LTE
+penggunaan template menggunakan cara manual tidak menggunakan laravel vite  
+1. Copy file css js admin lte langsung di folder public
+2. Buat layout dengan menyalin template halaman admin lte di resource/views
+3. Bagi Layout sesuai keinginan untuk mempermudah pengembangan menggunakan directive yg disediakan laravel
+4. View auth yg digenerate laravel diganti dengan view dari admin lte
+5. Atur view login/register di controller. Atur dgn menimpa mehod show/register loginform   
+*!! semua yg divendor folder tidak bisa dirubah !!*    
+https://laraveldaily.com/post/9-things-you-can-customize-in-laravel-registration  
+
+
+
