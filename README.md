@@ -41,5 +41,25 @@ penggunaan template menggunakan cara manual tidak menggunakan laravel vite
 *!! semua yg divendor folder tidak bisa dirubah !!*    
 https://laraveldaily.com/post/9-things-you-can-customize-in-laravel-registration  
 
+### Membuat CRUD
+#### Persiapan
+1. Generate a migration, seeder, factory, policy, resource controller, and form request classes for the model
+```
+php artisan make:model NamaModel -a
+```
+#### Membuat Database
+1. Buat migrasi untuk membuat tabel di database
+2. Buat Factory untuk membuat code data fake, 
+3. Buat seeder untuk membuat berapa row
+4. Panggil seeder yg sudah dibuat di DatabaseSeeder.php
+5. ubah faker jadi Indonesia id_ID di config/app
+6. menjalankan migrasi dan seeder. fresh artinya delete semua tabel lalu jalankan migrasi
+```
+php artisan migrate:fresh --seed
+```
+
+
+
+
 
 
